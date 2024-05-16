@@ -1,0 +1,60 @@
+.addtask {
+  width: 80%;
+  margin: 1rem auto;
+  .input {
+    width: 90%;
+    padding: 4px;
+    margin-right: 0.4rem;
+  }
+  .addButton {
+    padding: 4px;
+    background-color: rgb(15, 15, 50);
+    color: white;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+.todoList {
+  width: 80%;
+  margin: 1rem auto;
+  ul li {
+    list-style: none;
+  }
+  .completed-task {
+    text-decoration: line-through;
+  }
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    // border: 1px solid black;
+    .task-text {
+      flex-grow: 1;
+    }
+
+    .button-group {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-right: 5px;
+      }
+      .delete-button {
+        background-color: red;
+        color: white;
+        padding: 2px;
+      }
+
+      .edit-button {
+        background-color: rgba(0, 0, 255, 0.1);
+      }
+
+      .complete-button {
+        background-color: rgb(65, 176, 65);
+      }
+    }
+  }
+}
